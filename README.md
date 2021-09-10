@@ -20,3 +20,9 @@ read dump file:
 sudo sysdig -r dump.scap0
 ```
 
+get 300 system events and save to file:
+```bash
+sudo sysdig -n 300 -w sysdig-trace-file.scap
+```
+
+
