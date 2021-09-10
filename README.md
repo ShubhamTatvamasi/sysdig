@@ -15,3 +15,8 @@ write output to file:
 sudo sysdig -G 10800 -W 72 -w dump.scap
 ```
 
+read dump file:
+```bash
+sudo sysdig -r dump.scap0
+```
+
