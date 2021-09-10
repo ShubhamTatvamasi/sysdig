@@ -35,6 +35,14 @@ capture file names opened by vim:
 sudo sysdig -p "%evt.arg.name" proc.name=vim
 ```
 
+capture all directory changes by user:
+```bash
+sudo sysdig -p "%evt.arg.path" "evt.type=chdir and user.name=ubuntu"
+```
+
+
+
+
 
 
 
