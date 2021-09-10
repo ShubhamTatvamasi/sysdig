@@ -30,8 +30,10 @@ trace vim file changes:
 sudo sysdig proc.name=vim -w vim-sysdig-trace-file.scap 
 ```
 
-
-
+capture file names opened by vim:
+```bash
+sudo sysdig -p "%evt.arg.name" proc.name=vim
+```
 
 
 
