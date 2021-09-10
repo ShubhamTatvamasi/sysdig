@@ -25,4 +25,14 @@ get 300 system events and save to file:
 sudo sysdig -n 300 -w sysdig-trace-file.scap
 ```
 
+trace vim file changes:
+```bash
+sudo sysdig proc.name=vim -w vim-sysdig-trace-file.scap 
+```
+
+
+
+
+
+
 
