@@ -10,6 +10,6 @@ sudo csysdig -d 10000
 
 replay scap file:
 ```bash
-sudo sysdig -r test.scap
+sudo csysdig -r test.scap
 ```
 
