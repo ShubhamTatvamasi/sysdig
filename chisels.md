@@ -13,7 +13,7 @@ sudo sysdig -c netlower 15
 spy on all data exchange between linux and IP:
 ```bash
 sudo sysdig -c spy_ip 192.168.0.75
-# This also applies on spy_port spy_file spy_users
+# This also applies on: spy_port spy_file spy_users
 ```
 
 
