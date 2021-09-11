@@ -28,3 +28,8 @@ sudo sysdig -c httplog fd.cip=192.168.0.75
 sudo sysdig -c httplog fd.cip=192.168.0.75 and fd.type=ipv4
 ```
 
+capture all read/write on specfic file:
+```bash
+sudo sysdig -c echo_fds "fd.name contains /root/sysdig_lecture/service.conf"
+```
+
