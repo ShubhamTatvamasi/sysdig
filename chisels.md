@@ -10,7 +10,7 @@ capture processes with network i/o slower slower than 15 miliseconds:
 sudo sysdig -c netlower 15
 ```
 
-spy on all data exchange between IP:
+spy on all data exchange between linux and IP:
 ```bash
 sudo sysdig -c spy_ip 192.168.0.75
 ```
