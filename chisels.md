@@ -25,5 +25,6 @@ sudo sysdig -c topfiles_bytes "not (fd.name contains /home/ubuntu/Download or fd
 capture http request on your web server from specfic IP:
 ```bash
 sudo sysdig -c httplog fd.cip=192.168.0.75
+sudo sysdig -c httplog fd.cip=192.168.0.75 and fd.type=ipv4
 ```
 
