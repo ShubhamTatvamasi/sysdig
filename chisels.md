@@ -33,3 +33,8 @@ capture all read/write on specfic file:
 sudo sysdig -c echo_fds "fd.name contains /root/sysdig_lecture/service.conf"
 ```
 
+capture top local ports:
+```bash
+sudo sysdig -c fdbytes_by fd.sport
+```
+
