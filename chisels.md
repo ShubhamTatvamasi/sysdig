@@ -16,5 +16,11 @@ sudo sysdig -c spy_ip 192.168.0.75
 # This also applies on: spy_port spy_file spy_users
 ```
 
+list all files with top read/write:
+```bash
+sudo sysdig -c topfiles_bytes "not fd.name contains /proc"
+sudo sysdig -c topfiles_bytes "not (fd.name contains /home/ubuntu/Download or fd.name contains /home/ubuntu/Documents)"
+```
+
 
 
