@@ -22,5 +22,8 @@ sudo sysdig -c topfiles_bytes "not fd.name contains /proc"
 sudo sysdig -c topfiles_bytes "not (fd.name contains /home/ubuntu/Download or fd.name contains /home/ubuntu/Documents)"
 ```
 
-
+capture http request on your web server from specfic IP:
+```bash
+sudo sysdig -c httplog fd.cip=192.168.0.75
+```
 
